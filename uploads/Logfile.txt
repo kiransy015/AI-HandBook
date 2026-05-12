@@ -1,0 +1,40 @@
+[HTTP] --> POST /wd/hub/session/8a2b.../element {"using":"id","value":"submit_btn"}
+[W3C (8a2b)] Calling AppiumDriver.findElement() with args: ["id","submit_btn"]
+[WD Proxy] Proxying [POST /element] to [POST http://127.0.0]
+[WD Proxy] Got response with status 404: {"value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters.","stacktrace":"..."}}
+[W3C (8a2b)] Encountered internal error running command: NoSuchElementError: An element could not be located...
+[HTTP] <-- POST /wd/hub/session/8a2b.../element 404 (2500ms)
+[HTTP] --> POST /wd/hub/session/8a2b.../click {"element":"0.123"}
+[W3C (8a2b)] Calling AppiumDriver.click() with args: ["0.123"]
+[BaseDriver] Proxying [POST /click] to [POST http://127.0.0]
+[BaseDriver] Error: Appium did not get a response from 'click' command in 60000ms
+[W3C (8a2b)] Encountered internal error running command: Error: Com.github.appium.uiautomator2.common.exceptions.UiAutomator2Exception: java.util.concurrent.TimeoutException
+[HTTP] <-- POST /wd/hub/session/8a2b.../click 500 (60005ms)
+[Appium] Welcome to Appium v2.x.x
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+[Appium] Encountered internal error running command: Error: Could not find a connected Android device.
+[Appium] SESSION_CREATION_FAILURE: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource.
+[HTTP] <-- POST /wd/hub/session 404 (15ms)
+05-01 14:05:10.123  1200  1250 E ActivityManager: ANR in com.example.app (com.example.app/.MainActivity)
+05-01 14:05:10.123  1200  1250 E ActivityManager: Reason: Input dispatching timed out (Waiting to send non-key event because the focused window has not finished processing...)
+05-01 14:05:12.456  1200  1250 I Process : Sending signal. PID: 5678 SIG: 9
+05-01 14:05:12.500  1200  1250 W ActivityManager: Force finishing activity com.example.app/.MainActivity
+05-01 14:10:05.999  5678  5700 E HttpClient: java.net.ConnectException: Failed to connect to ://production.com
+05-01 14:10:06.010  5678  5700 W NetworkMonitor: Network connection timed out. Retrying (1/3)...
+05-01 14:10:10.500  5678  5700 D HeadSpinNetwork: DNS resolution failed for 'internal-service.local'
+05-01 14:10:11.000  5678  5700 E OkHttp: HTTP FAILED: java.net.SocketTimeoutException: timeout
+ERROR: You are not authorized to perform this action. 
+Please make sure that your API token is correct, corresponding permissions 
+up to date and that you are connecting to the right API backend.
+[Appium] SESSION_CREATION_FAILURE: The requested resource could not be found.
+[HTTP] <-- POST /wd/hub/session 404 (15ms)
+[BaseDriver] Error: Appium did not get a response from 'click' command in 60000ms
+E ActivityManager: ANR in com.example.app (com.example.app/.MainActivity)
+E ActivityManager: Reason: Input dispatching timed out
+2026-05-01 14:02:10:123 - [HTTP] --> POST /wd/hub/session/.../element
+2026-05-01 14:02:10:123 - [W3C (..)] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.Button"]
+2026-05-01 14:02:10:123 - [BaseDriver] Validating 1 capability: {platformName: "Android"}
+2026-05-01 14:02:11:500 - [AndroidUiautomator2Driver] Searching for element using xpath: //android.widget.Button
+2026-05-01 14:02:12:000 - [AndroidUiautomator2Driver] Retrying element search...
+2026-05-01 14:02:15:200 - [W3C (..)] Encountered internal error. NotYetImplementedError: The requested element could not be found.
+2026-05-01 14:02:15:200 - [HTTP] <-- POST /wd/hub/session/.../element 404 3077ms
