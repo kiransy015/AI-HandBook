@@ -11,7 +11,7 @@ website_page = st.Page("pages/website_page.py", title="Video & URL Summarizer_Gr
 # pdf2_page = st.Page("pages/pdf2_page.py", title="PDF RAG Engine_OpenAI_AstraDb[ERROR]", icon=":material/picture_as_pdf:")
 pdf3_page = st.Page("pages/pdf3_page.py", title="PDF RAG Engine_Nvidia_FAISSDb", icon=":material/picture_as_pdf:")
 crew_page = st.Page("pages/crew_page.py", title="Video Content Summarizer Using Agents_OpenAI", icon=":material/media_link:")
-hybridsearch_page = st.Page("pages/hybridsearch_page.py", title="Hybrid Search RAG_HuggingFace_Pinecone", icon=":material/database_search:")
+hybridsearch_page = st.Page("pages/hybridSearch_page.py", title="Hybrid Search RAG_HuggingFace_Pinecone", icon=":material/database_search:")
 imageCompare_page = st.Page("pages/imageCompare_page.py", title="AI Image Comparer_OpenAI", icon=":material/animated_images:")
 
 # Create and run the navigation
