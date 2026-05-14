@@ -34,3 +34,4 @@ pinecone
 pinecone-text
 pinecone-notebooks
 streamlit_image_comparison
+duckduckgo-search

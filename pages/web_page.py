@@ -4,6 +4,7 @@ from langchain_community.tools import ArxivQueryRun,WikipediaQueryRun,DuckDuckGo
 import os
 from dotenv import load_dotenv
 from utils.prepare_data import web_search
+from duckduckgo_search import DDGS
 
 ## Arxiv and wikipedia Tools
 api_wrapper_arxiv = ArxivAPIWrapper(top_k_results=1,doc_content_chars_max=250)
