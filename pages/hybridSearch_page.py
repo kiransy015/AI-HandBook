@@ -4,7 +4,6 @@ import streamlit as st
 from langchain_community.retrievers import PineconeHybridSearchRetriever
 import os
 from pinecone import Pinecone , ServerlessSpec
-index_name = "hybrid-search-langchain-pinecone"
 from langchain_huggingface import HuggingFaceEmbeddings
 from pinecone_text.sparse import BM25Encoder
 from utils.prepare_data import process_uploaded_files
