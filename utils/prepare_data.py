@@ -144,9 +144,6 @@ def submit_your_questions(documents, embeddings,llm,session_id):
 
 
 def web_search(model,api_key,tools):
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
-    
     for msg in st.session_state.messages:
         st.chat_message(msg["role"]).write(msg['content'])
 
@@ -161,7 +158,7 @@ def web_search(model,api_key,tools):
 
         with st.chat_message("assistant"):
             st_cb = StreamlitCallbackHandler(st.container(),expand_new_thoughts=False)
-            response = search_agent.run(prompt,callbacks=[st_cb])
+            response = search_agent.run(st.session_state.messages,callbacks=[st_cb])
             st.session_state.messages.append({'role':'assistant',"content":response})
             st.write(response)
 
